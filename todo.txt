@@ -1,0 +1,39 @@
+Tests:
+- I got lazy with the testing, I need to write better tests
+- Need to write better tests, specifically for the text_processor_class
+
+
+Finish the Text Processor Class
+- I started to upgrade the text processor class and squash bugs, I haven't finished
+
+
+Add Database:
+- Have hearing objects save themselves to a data base
+- Eventually we can you the website to provide analytics on the saved data
+- Create script to go through prior save calendars and save all the data to the database
+
+
+Replace the Run System:
+- Currently the script is set up to run as a Cronjob every 5 minutes, but there may be a better way
+- Calendars are generally update around 7:00 pm each night.  If the system has just downloaded the calendar,
+  there really isn't a need to check again until the next afternoon.
+
+  Current Cron Job:
+
+  Crontab
+  */5 * * * *  python3  /home/jason/calendar_robot/main.py
+
+
+Move To Docker:
+- Replace the current virtual environment with a Dockerfile
+- Make the Database run in a separate container and create the appropriate Docker-Compose file
+
+
+Create A Website:
+- Create a website that allows attorneys to sign up and receive daily alerts
+- Create a billing system to charge a monthly fee
+- Allow attorney to perform searches and analytics for an additional fee
+- Allow Case Tracking Services, allow someone to sign up and receive alerts on a specific case
+- Track disappearing cases
+
+
